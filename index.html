@@ -280,6 +280,24 @@
     <!-- Start of Jivochat Embed Code -->
     <script src="//code-sa1.jivosite.com/widget/hEAr1AGq1C" async></script>
     <!-- End of Jivochat Embed Code -->
+    
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'ZnqEB2PyjYSuzPhASPfE1BWX',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+    
 
 
 </body>
